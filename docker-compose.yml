@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  app:
+    image: ${IMAGE:-localhost:8081/projet-ci-cd/fastapi-app:latest}
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
