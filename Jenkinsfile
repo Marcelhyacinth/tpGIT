@@ -67,7 +67,7 @@ pipeline {
             steps {
                 sh '''
                     export IMAGE=${FULL_IMAGE}
-                    docker compose -f docker-compose.yml up -d --force-recreate
+                    docker-compose -f docker-compose.yml up -d --force-recreate
                 '''
             }
         }
