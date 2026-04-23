@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         HARBOR_URL = "localhost:8081"
-        PROJECT    = "projet-ci-cd"
+        PROJECT    = "projetcicd"
         IMAGE_NAME = "fastapi-app"
         IMAGE_TAG  = "${BUILD_NUMBER}"
         FULL_IMAGE = "${HARBOR_URL}/${PROJECT}/${IMAGE_NAME}:${IMAGE_TAG}"
